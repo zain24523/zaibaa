@@ -1,0 +1,128 @@
+.selling_header > h2 {
+	color: #000;
+	font-family: Montserrat;
+	font-size: 45px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.selling {
+	padding-inline: 4rem;
+	overflow-x: hidden;
+}
+.selling_header {
+	margin-block: 2rem;
+}
+
+.selling_header > h3 {
+	color: #0a7d25;
+	font-family: Montserrat;
+	font-size: 60.4px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.selling_main {
+	width: 100%;
+	display: flex;
+	gap: 1rem;
+}
+.l {
+	width: 50%;
+}
+.l > img {
+	width: 100%;
+}
+.r {
+	width: 50%;
+}
+
+.r .cir {
+	position: relative;
+	border-radius: 12px;
+	border: 3px solid #0a7d25;
+}
+.r .quote {
+	font-family: Montserrat;
+	font-size: 8rem;
+	position: absolute;
+	left: 5px;
+	top: -80px;
+}
+.r .quotes {
+	position: absolute;
+	font-family: Montserrat;
+	font-size: 8rem;
+	right: 5px;
+	bottom: 0px;
+}
+
+.cir > p {
+	color: #828282;
+	font-family: Montserrat;
+	font-size: 29px;
+	font-style: normal;
+	padding: 5rem 4rem;
+	font-weight: 400;
+	line-height: normal;
+}
+.imagess {
+	margin-top: 5rem;
+	position: relative;
+	left: -80px;
+	display: flex;
+	gap: 1rem;
+	width: 120%;
+	border: 2px solidn red;
+}
+.iamge-w {
+	width: 280px;
+	height: auto;
+	border-radius: 10px;
+}
+@media (min-width: 320px) and (max-width: 820px) {
+	.selling_main {
+		flex-wrap: wrap;
+	}
+	.r {
+		width: 100%;
+	}
+	.l {
+		width: 100%;
+	}
+	.l > img {
+		width: 100%;
+	}
+	.imagess {
+		margin-top: 5rem;
+		position: relative;
+		left: 0px;
+		display: flex;
+		gap: 1rem;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.iamge-w {
+		width: 80%;
+		height: auto;
+		border-radius: 10px;
+	}
+	.selling_header > h3 {
+		font-size: 33px;
+	}
+	.selling_header > h2 {
+		font-size: 30px;
+		margin-block: 1rem;
+	}
+	.cir > p {
+		font-size: 23px;
+		padding: 5rem 2rem ;
+	}
+
+	.selling {
+		padding-inline: 2rem;
+	}
+}
+

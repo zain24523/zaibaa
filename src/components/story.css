@@ -1,0 +1,78 @@
+.ourstroy {
+	width: 100%;
+	padding: 5rem 4rem;
+	display: flex;
+	box-sizing: border-box;
+	gap: 3rem;
+	align-items: center;
+}
+
+.mylf {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.mylf > .absut {
+	width: 68%;
+	height: 110%;
+	position: absolute;
+	top: 0px;
+	left: 5%;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+.mylf > img {
+	margin-top: 5rem;
+	width: 70%;
+	z-index: 100;
+}
+.myrf {
+	width: 50%;
+}
+.myrf > p {
+	width: 80%;
+	color: #757272;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-block: 2rem;
+}
+.myrf > h2 > span {
+	color: #0a7d25;
+	font-family: Montserrat;
+	font-size: 60.409px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.myrf > h2 {
+	font-family: Montserrat;
+	font-size: 60.409px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+@media (min-width: 320px) and (max-width: 820px) {
+	.ourstroy {
+		flex-wrap: wrap;
+		padding: 4rem 2rem;
+	}
+	.mylf {
+		width: 100%;
+	}
+	.myrf {
+		width: 100%;
+	}
+	.mylf > img {
+		margin-top: 2.5rem;
+		width: 78%;
+		z-index: 100;
+	}
+	.myrf > p {
+		width: 100%;
+	}
+}

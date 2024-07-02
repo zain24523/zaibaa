@@ -1,0 +1,211 @@
+.main_tech {
+	width: 100%;
+	display: flex;
+	padding-block: 5rem;
+	box-sizing: border-box;
+	padding-inline: 4rem;
+	gap: 3rem;
+}
+.tech1 {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.tech1 > h1 {
+	color: #0a7d25;
+	font-family: Montserrat;
+	font-size: 32.393px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.tech1 > h2 {
+	color: #000;
+	font-family: Montserrat;
+	font-size: 53.782px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.tech1 > p {
+	color: #555454;
+	font-family: Montserrat;
+	font-size: 15.38px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.main_tech .tech1 h1,
+h2,
+h3,
+p {
+	margin: 0px;
+}
+
+.tech1inside {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+.techinside1 {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.techinside1 > h3 {
+	color: #000;
+	font-family: Montserrat;
+	font-size: 22.676px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.techinside1 > p {
+	color: #555454;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.btns > button {
+	outline: none;
+	border: none;
+	padding: 15px 20px;
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	background-color: #0a7d25;
+}
+.tech2 {
+	position: relative;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+.tech2_main {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	height: 60%;
+	position: absolute;
+	border: 2px solid black;
+}
+.image1 {
+	width: 40%;
+	height: auto;
+}
+.image1 > img {
+	position: relative;
+	z-index: 1000;
+	width: 100%;
+}
+
+.image2 {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: space-around;
+}
+.image21 {
+	width: 300px;
+	z-index: 100;
+}
+.image23 {
+	width: 400px;
+	z-index: 100;
+}
+
+@media (min-width: 1220px) and (max-width: 1440px) {
+	.image2 img {
+		width: 280px;
+		height: auto;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1220px) {
+	.image2 img {
+		margin-top: 2rem;
+		width: 250px;
+		height: 200px;
+	}
+	.tech2_main {
+		top: 42%;
+		height: 35%;
+	}
+	.tech2 {
+		gap: 0px;
+	}
+	.main_tech {
+		gap: 1rem;
+	}
+	.tech1 > h2 {
+		font-size: 33px;
+	}
+}
+
+@media (min-width: 440px) and (max-width: 820px) {
+	.main_tech {
+		padding-inline: 2rem;
+		flex-wrap: wrap;
+	}
+	.tech1 {
+		width: 100%;
+	}
+	.tech2 {
+		width: 100%;
+	}
+	.image2 img {
+		margin-top: 2rem;
+		width: 45%;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 440px) {
+	.main_tech {
+		padding-inline: 2rem;
+		flex-wrap: wrap;
+	}
+	.tech1 {
+		width: 100%;
+	}
+	.tech2 {
+		width: 100%;
+	}
+	.image2 img {
+		margin-top: 2rem;
+		width: 45%;
+	}
+	.tech2_main {
+		display: none;
+	}
+	.image1{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.image1 > img {
+		position: relative;
+		z-index: 1000;
+		width: 100%;
+	}
+	.tech2 {
+		width: 100%;
+		gap: 0rem;
+	}
+	.image2{
+		flex-wrap: wrap;
+	}
+	.image2 img{
+		width: 100%;
+	}
+}
